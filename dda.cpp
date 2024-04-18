@@ -10,7 +10,9 @@ int main() {
     float xIncrement = (float)dx / steps, yIncrement = (float)dy / steps;
     float x = x1, y = y1;
 
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"DDA",WHITE);
+
     putpixel(x, y, WHITE);
     
     for (int k = 0; k < steps; k++) {

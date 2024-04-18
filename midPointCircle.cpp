@@ -6,7 +6,10 @@ void drawCircle(int xc, int yc, int radius) {
     int x = 0, y = radius;
     int p = 1 - radius;
     
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+//    int width=GetSystemMetrics(SM_CXSCREEN);
+//	int height=GetSystemMetrics(SM_CYSCREEN);
+	initwindow(800,600,"MidPoint Circle Algorithm",WHITE);
 
     // Plot the initial point
     putpixel(xc + x, yc - y, WHITE);
@@ -34,8 +37,7 @@ void drawCircle(int xc, int yc, int radius) {
 }
 
 int main() {
-    int xc=300, yc=300, radius=50;
-    drawCircle(xc, yc, radius);
+    drawCircle(200,220,90);
     return 0;
 }
 

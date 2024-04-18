@@ -13,7 +13,9 @@ void floodFill(int x, int y, int old_color, int new_color) {
 int main() {
     int gd = DETECT, gm;
 
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"Flood Fill",WHITE);
+
 
     // Drawing a boundary
     rectangle(100, 100, 300, 300);

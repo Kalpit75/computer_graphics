@@ -13,7 +13,9 @@ void boundaryFill(int x, int y, int fill_color, int boundary_color) {
 int main() {
     int gd = DETECT, gm;
 
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"Boundary Fill Algorithm",WHITE);
+
 
     // Drawing a boundary
     rectangle(100, 100, 300, 300);

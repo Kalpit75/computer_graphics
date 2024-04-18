@@ -7,7 +7,9 @@ void drawCircle(int xc, int yc, int radius) {
     int x, y;
     float theta, dTheta = 1.0 / radius;
 
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"Polar Coordinate Algorithm",WHITE);
+
 
     for (theta = 0; theta <= 360; theta += dTheta) {
         x = xc + radius * cos(theta * M_PI / 180);

@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include <graphics.h>
 
 void drawEllipse(int xc, int yc, int rx, int ry) {
@@ -6,7 +6,10 @@ void drawEllipse(int xc, int yc, int rx, int ry) {
     int x = 0, y = ry;
     float p1, p2;
 
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"MidPoint Ellipse Algorithm",WHITE);
+
+    	
 
     // Region 1
     p1 = ry * ry - rx * rx * ry + rx * rx / 4;

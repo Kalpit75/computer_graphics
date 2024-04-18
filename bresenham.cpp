@@ -9,7 +9,9 @@ int main() {
     int dx, dy, p, x, y;
 
     // Initialize graphics mode
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"Bresenham's Line Drawing Algirithm'",WHITE);
+
 
     // Calculate dx and dy
     dx = x2 - x1;

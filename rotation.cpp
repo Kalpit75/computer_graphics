@@ -29,7 +29,9 @@ int main() {
     float theta = 0; // Initial rotation angle in degrees
     float dTheta = 1; // Increment in rotation angle for each step
 
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"rotation",WHITE);
+
 
     while (!kbhit()) { // Continue animation until a key is pressed
         cleardevice(); // Clear the screen

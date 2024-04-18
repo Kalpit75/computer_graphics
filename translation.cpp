@@ -24,7 +24,9 @@ int main() {
     int x1 = 100, y1 = 100, x2 = 200, y2 = 100, x3 = 150, y3 = 50;
     int dx = 5, dy = 5; // Translation factors
 
-    initgraph(&gd, &gm, "");
+//    initgraph(&gd, &gm, "");
+	initwindow(800,600,"Translation",WHITE);
+
 
     // Animation loop
     for (int i = 0; i < 40; i++) {
